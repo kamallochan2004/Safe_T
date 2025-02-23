@@ -6,7 +6,7 @@ from sklearn.exceptions import NotFittedError
 
 
 def train_ai_model():
-    df = pd.read_csv("train_data_updated.csv")
+    df = pd.read_csv("train_data_updated2.csv")
 
     X = df[["Gender", "Age", "Diabetes", "Asthma", "Heart_Disease"]]
     y = df[[

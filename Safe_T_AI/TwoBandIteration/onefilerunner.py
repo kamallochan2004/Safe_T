@@ -41,6 +41,8 @@ band_vitals = {}
 band_params = {}
 band_params["band1"] = predict_using_model(0, 0, 0, 1, 1)
 band_params["band2"] = predict_using_model(1, 0, 1, 1, 0)
+print(band_params["band1"])
+print(band_params["band2"])
 
 
 def process_band_data(band, heart_rate, spo2, body_temp, client):
