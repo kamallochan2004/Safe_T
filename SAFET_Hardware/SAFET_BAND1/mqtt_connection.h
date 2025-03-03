@@ -8,7 +8,7 @@
 // WiFi and MQTT configuration:
 #define WIFI_SSID ""
 #define WIFI_PASSWORD ""
-#define MQTT_SERVER "test.mosquitto.org"
+#define MQTT_SERVER "Enter your own mqtt broker"
 #define MQTT_PORT 1883
 #define STATUS_TOPIC "SAFET/band1/status"
 #define VITALS_TOPIC "SAFET/band1/vitals"
