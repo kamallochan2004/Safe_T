@@ -124,17 +124,20 @@ def on_message(client, userdata, msg):
 # ---------------- Main ----------------
 def main():
     client = mqtt.Client()
+    # Set MQTT username and password
+    client.username_pw_set("mqtt_username", "mqtt_pass")
+    
     client.on_connect = on_connect
     client.on_message = on_message
 
-    mqtt_server = "test.mosquitto.org"
+    mqtt_server = "enter your mqtt broker address"
+    mqtt_port = 1883
     try:
-        client.connect(mqtt_server, 1883, 60)
+        client.connect(mqtt_server, mqtt_port, 60)
         print("🚀 Listening for MQTT messages...")
         client.loop_forever()
     except Exception as e:
         print(f"❌ Error: Unable to connect to MQTT Broker - {e}")
-
-
+    
 if __name__ == "__main__":
     main()

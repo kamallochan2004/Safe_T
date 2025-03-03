@@ -5,13 +5,13 @@ import { getMainDefinition } from '@apollo/client/utilities';
 
 // HTTP endpoint for queries & mutations
 const httpLink = new HttpLink({
-  uri: 'https://safe-t.work.gd/graphql',
+  uri: 'Enter your own endpoint here',
 });
 
 // WebSocket endpoint for subscriptions
 const wsLink = new GraphQLWsLink(
   createClient({
-    url: 'wss://safe-t.work.gd/graphql',
+    url: 'Enter your own endpoint here',
     connectionParams: {
       reconnect: true,
     },

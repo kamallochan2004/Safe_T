@@ -6,6 +6,46 @@ import img1 from "../assets/logo.png"
 import ParallaxSection from '../components/ParallaxSection'
 import video from "../assets/backgroundmp.mp4"
 import { useNavigate } from 'react-router-dom';
+import { AnimatedTestimonials } from '../components/ui/animated-testimonials';
+
+const testimonials = [
+  {
+    quote: "Configured the hardware and streamlined the process for real-time communication,enabling seamless connectivity.",
+    name: "Kamallochan Das",
+    designation: "IoT Developer",
+    src: img1,
+  },
+  {
+    quote: "Designed and developed interactive user interfaces, optimizing performance and enhancing user experience.",
+    name: "Soham Ghosh",
+    designation: "Frontend Developer",
+    src: img1,
+  },
+  {
+    quote: "Designed the AI model for predicting params and algorithms for monitoring and lodging the status.",
+    name: "Ashish Kumar Samantaray",
+    designation: "Backend Algorithm and AI developer",
+    src: img1,
+  },
+  {
+    quote: "Improvised the frontend and connected the frontend with mongo using socket.",
+    name: "Pratyush Samantara",
+    designation: "Fullstack developer",
+    src: img1,
+  },
+  {
+    quote: "Researched over existing practices and extracted information over the devices.",
+    name: "Swayam Routray",
+    designation: "Web scraping and data extraction",
+    src: img1,
+  },
+  {
+    quote: "Built backend with Spring Boot, MongoDB, and optimized alerts, notifications, and system reliability." ,
+    name: "Anubhav Jaiswal",
+    designation: "Backend & Real-time System Integration Engineer",
+    src: img1,
+  },
+];
 
 export default function LandingPage() {
     const navigate = useNavigate();
@@ -269,6 +309,9 @@ export default function LandingPage() {
       </section>
       {/* carousel section */}
       {/*<Carousel/>*/}
+      <div className="bg-white dark:bg-black min-h-screen flex items-center justify-center">
+          <AnimatedTestimonials testimonials={testimonials} autoplay/>
+        </div>
       {/* Footer */}
       <footer className="bg-gray-900 dark:bg-black text-gray-400 py-12 transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
