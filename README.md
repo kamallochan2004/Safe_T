@@ -45,9 +45,8 @@ SAFE-T Band is an **IoT-powered real-time health & safety monitoring system** de
 
 ## **📷 System Overview**  
 
-![System Workflow](https://i.imghippo.com/files/KxCL6387kHw.jpg)
+![System Workflow](https://drive.google.com/uc?export=view&id=1qJNiS9jm7cRBmTafZfJOZemFLHtKjf-g)
 
----
 
 ## **🚀 Getting Started**  
 
